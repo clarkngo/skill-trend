@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+header {
+    background: #007bff; /* Primary Blue */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #0056b3;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5em;
+}
+
+section {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.content-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* --- Model Prototype Section Styling --- */
+#model-output {
+    background-color: #e9ecef; /* Light gray background */
+}
+
+.prototype-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.model-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    min-width: 300px;
+}
+
+.model-card h3 {
+    color: #0056b3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.model-card label, .model-card select, .model-card input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.model-card select, .model-card input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #b3d7ff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.result-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.model-note {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+/* Color Coding for Results */
+.positive { color: #28a745; } /* Green for growth */
+.neutral { color: #ffc107; } /* Yellow/Orange for salary */
+
+/* --- Detail Section Styling --- */
+.details-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: left;
+}
+
+.detail-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex: 1;
+}
+
+.detail-item h3 {
+    color: #28a745; /* Secondary Green */
+}
+
+.detail-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.detail-item li {
+    background: #f8f9fa;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-left: 3px solid #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40; /* Dark Footer */
+    color: white;
+    font-size: 0.9em;
+}
