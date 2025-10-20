@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Trend: Regional Demand & Compensation Forecasting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Skill Trend 💡</h1>
+        <p>Regional Demand & Compensation Forecasting using Deep Learning</p>
+    </header>
+
+    <section id="problem-application">
+        <h2>The Problem & Our Solution</h2>
+        <div class="content-box">
+            <p><strong>Problem:</strong> The job market lacks real-time, granular insight into future skill demand and regional salary premiums.</p>
+            <p><strong>Solution:</strong> We use NLP and Time-Series Deep Learning to extract critical skills from job postings and predict their future demand and associated compensation by region.</p>
+        </div>
+    </section>
+    
+    <section id="model-output">
+        <h2>Live Model Prototype & Insights</h2>
+        
+        <div class="prototype-container">
+            <div class="model-card">
+                <h3>📈 Skill Demand Forecast</h3>
+                <p class="subtitle">Predicting the popularity of a skill in **Region X** for **Q4 2025**.</p>
+                
+                <label for="skill-select">Select a Skill:</label>
+                <select id="skill-select">
+                    <option>Python</option>
+                    <option>TensorFlow</option>
+                    <option>Cloud Security</option>
+                </select>
+                
+                <label for="region-select">Select a Region:</label>
+                <select id="region-select">
+                    <option>New York, NY</option>
+                    <option>San Francisco, CA</option>
+                </select>
+
+                <div class="output-box">
+                    <p>Predicted Trend for **Python** in **New York, NY**:</p>
+                    <p class="result-text positive">**+8.5%** Job Posting Growth (Q4 2025)</p>
+                    <p class="model-note">*(Model: LSTM Time-Series Forecast)*</p>
+                </div>
+                
+            </div>
+
+            <div class="model-card">
+                <h3>💰 Salary & Compensation Prediction</h3>
+                <p class="subtitle">Estimating compensation for a **Data Scientist** role.</p>
+
+                <label for="experience-input">Years of Experience:</label>
+                <input type="number" id="experience-input" value="3" min="0">
+
+                <label for="skill-count-input">Required Skills Count:</label>
+                <input type="number" id="skill-count-input" value="5" min="1">
+
+                <div class="output-box">
+                    <p>Predicted Annual Salary Range:</p>
+                    <p class="result-text neutral">**\$125,000 - \$145,000**</p>
+                    <p class="model-note">*(Model: Random Forest Regressor)*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="data-model-details">
+        <h2>The Technical Details</h2>
+        <div class="details-grid">
+            <div class="detail-item">
+                <h3>Data Pipeline 💾</h3>
+                <ul>
+                    <li>**Source:** Job Postings Dataset (Kaggle/Web Scrape).</li>
+                    <li>**Preprocessing:** Text Cleaning, Geo-encoding, Salary Normalization.</li>
+                </ul>
+            </div>
+            <div class="detail-item">
+                <h3>Models Used 🧠</h3>
+                <ul>
+                    <li>**Forecast:** LSTM/GRU for Time-Series Skill Demand.</li>
+                    <li>**Prediction:** Random Forest/XGBoost for Salary Regression.</li>
+                    <li>**Tooling:** Python, Pandas, Scikit-Learn, TensorFlow/Keras.</li>
+                </ul>
+            </div>
+            <div class="detail-item">
+                <h3>Performance Metrics ✅</h3>
+                <ul>
+                    <li>**Forecast:** RMSE: **X.XX**, MAE: **Y.YY**.</li>
+                    <li>**Prediction:** R² Score: **0.9X**, Accuracy: **9X%**.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; DS620 - Skill Trend Team. Team Members: [Names Here]</p>
+    </footer>
+
+</body>
+</html>
